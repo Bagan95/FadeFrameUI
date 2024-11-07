@@ -2,6 +2,11 @@
 This addon will hide the player frame, minimap, action bars and buff icon based on the following conditions:    
 - *if full health & mana, no target and out of combat.*    
 
+# How to download and install the addon
+Press on the green button "<> Code" top right corner
+Under Local press on Download ZIP
+Extract the FadeFrameUI-main.zip file to the WoW map you have your addons in \Interface\AddOns
+Make sure the addon folder is named FadeFrameUI and not FadeFrameUI-main otherwise it will not show up ingame.
 
 ## Supported Addons and recommended Addons
 This addon supports both the default UI and https://shagu.org/ShaguTweaks/
