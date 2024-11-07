@@ -2,8 +2,6 @@
 This addon will change the transparency of the player frame, minimap, action bars and buff icon based on the following conditions:    
 - *if full health & mana, no target and out of combat.*
 
-As for now you're not able to change the transparency of the UI.
-
 # How to download and install the addon
 Press on the green button "<> Code" top right corner
 Under Local press on Download ZIP
