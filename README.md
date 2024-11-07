@@ -17,9 +17,12 @@ This is 100% (default) transparency.
 ![Target](https://github.com/user-attachments/assets/0ccc2300-3367-42b5-b5df-86158164297f)
 
 ## Supported Addons and recommended Addons
-This addon supports both the default UI and https://shagu.org/ShaguTweaks/
+This addon supports both the default UI and [ShaguTweaks](https://shagu.org/ShaguTweaks/)
 Use ShaguTweaks Addon to be able to use the scroll wheel on the chat frame.
 Make sure to drag the frame that has visible arrows of the screen, to get the whole UI transparent.
 
 ## Not supported addon
 pfUI is not supported but some functions will work.
+
+
+[pfUI](https://shagu.org/pfUI/)
