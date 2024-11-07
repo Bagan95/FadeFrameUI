@@ -7,9 +7,11 @@ Press on the green button "<> Code" top right corner
 
 Under "Local" press on "Download ZIP"
 
-Extract the FadeFrameUI-main.zip file to the WoW map you have your addons in \Interface\AddOns
+Extract the FadeFrameUI-main.zip file to your WoW folder where you have your addons installed "\Interface\AddOns"
 
 Make sure the addon folder is named FadeFrameUI and not FadeFrameUI-main otherwise it will not show up ingame.
+
+Should look like this: "\Interface\AddOns\FadeFrameUI"
 
 This is 20% (default) transparency.
 
