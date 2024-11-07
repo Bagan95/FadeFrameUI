@@ -1,5 +1,5 @@
 # FadeFrameUI
-This light weight addon that changes the transparency of the player frame, minimap, action bars and buff icon based on the following conditions:    
+Light weight addon that changes the transparency of the player frame, minimap, action bars and buff icon based on the following conditions:    
 - *if full health & mana, no target and out of combat.*
 
 This is 20% (default) transparency.
