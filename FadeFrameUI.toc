@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: FadeFrameUI
+## Notes: Immersive and OLED-safe addon that fades the UI after a few seconds when not in combat, targeting or having full health/mana
+## Author: Bagan95
+## Version: 1.0
+
+FadeFrameUI.lua
