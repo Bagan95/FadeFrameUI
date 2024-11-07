@@ -4,8 +4,11 @@ This addon will change the transparency of the player frame, minimap, action bar
 
 # How to download and install the addon
 Press on the green button "<> Code" top right corner
+
 Under Local press on Download ZIP
+
 Extract the FadeFrameUI-main.zip file to the WoW map you have your addons in \Interface\AddOns
+
 Make sure the addon folder is named FadeFrameUI and not FadeFrameUI-main otherwise it will not show up ingame.
 
 This is 20% (default) transparency.
@@ -18,6 +21,7 @@ This is 100% (default) transparency.
 
 ## Supported Addons and recommended Addons
 This addon supports both the default UI and [ShaguTweaks](https://shagu.org/ShaguTweaks/)
+
 Use ShaguTweaks Addon to be able to use the scroll wheel on the chat frame.
 Make sure to drag the frame that has visible arrows of the screen, to get the whole UI transparent.
 
