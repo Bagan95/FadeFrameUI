@@ -33,7 +33,7 @@ Unlock the chat frame and drag it slightly out of the screen to not have the arr
 
 ## Not supported addon
 [pfUI](https://shagu.org/pfUI/) is not supported but some functions will work.
-It is not nessesary to have both installed cause the pfUI already have some of this fuctions built in.
+It is not nessesary to have both installed cause pfUI already have some of this fuctions built in.
 This addon "FadeFrameUI" is for people that stil want the default UI.
 
 Works on World of Warcraft versions 1.12.1 and Turtle WoW 1.17.2
