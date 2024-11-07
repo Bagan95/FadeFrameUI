@@ -5,7 +5,6 @@ This addon will change the transparency of the player frame, minimap, action bar
 This addon works on 1.12.1 versions and Turtle WoW.
 
 
-
 This is 20% (default) transparency.
 
 ![No Target](https://github.com/user-attachments/assets/13dff91d-ebca-440a-86d0-f4474ef87424)
