@@ -1,9 +1,6 @@
-# FadeFrameUI
+# FadeFrameUI - Works on 1.12.1 and Turtle WoW
 This addon will change the transparency of the player frame, minimap, action bars and buff icon based on the following conditions:    
 - *if full health & mana, no target and out of combat.*
-
-This addon works on 1.12.1 versions and Turtle WoW.
-
 
 This is 20% (default) transparency.
 
