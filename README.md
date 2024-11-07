@@ -11,7 +11,7 @@ This is 100% (default) transparency.
 ![Target](https://github.com/user-attachments/assets/0ccc2300-3367-42b5-b5df-86158164297f)
 
 # How to download and install the addon
-Press on the green button "<> Code" top right corner
+Press on the green button "<> Code" top right corner or press directly here [Download](https://github.com/Bagan95/FadeFrameUI/archive/refs/heads/main.zip)
 
 Under "Local" press on "Download ZIP"
 
