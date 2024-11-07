@@ -5,7 +5,7 @@ This addon will change the transparency of the player frame, minimap, action bar
 # How to download and install the addon
 Press on the green button "<> Code" top right corner
 
-Under Local press on Download ZIP
+Under "Local" press on "Download ZIP"
 
 Extract the FadeFrameUI-main.zip file to the WoW map you have your addons in \Interface\AddOns
 
