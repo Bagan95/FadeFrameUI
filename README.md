@@ -27,7 +27,7 @@ Should look like this: "\Interface\AddOns\FadeFrameUI"
 This addon support and recommend [ShaguTweaks](https://shagu.org/ShaguTweaks/)
 
 ShaguTweaks Addon has an option called "Chat Tweaks" that you can activate ingame. By activating the function you are able to use the scroll wheel
-of your mouse instead of the arrows up and down, on the chat frame it self.
+of your mouse instead of the arrow buttons up and down, on the chat frame it self.
 
 Unlock the chat frame and drag it slightly out of the screen to not have the arrows visable anymore.
 
