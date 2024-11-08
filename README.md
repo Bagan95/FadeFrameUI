@@ -6,7 +6,7 @@ This addon will hopefully make you more immersed in to the game and also prevent
 
 # This is 20% (default) transparency.
 
-![example image](https://i.imgur.com/EakfxrW.jpeg "20% transparency")
+![example image](https://i.imgur.com/EakfxrW.jpg "20% transparency")
 
 # This is 100% (default) transparency.
 
