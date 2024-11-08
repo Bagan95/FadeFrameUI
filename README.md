@@ -6,12 +6,13 @@ This addon will hopefully make you more immersed in to the game and also prevent
 
 # This is 20% (default) transparency.
 
-![20%](https://i.imgur.com/AdwFO8e.jpeg)
+![20%](https://i.imgur.com/ic155H3.jpeg)
 
 
 # This is 100% (default) transparency.
 
-![Target](https://github.com/user-attachments/assets/0ccc2300-3367-42b5-b5df-86158164297f)
+![100%](https://i.imgur.com/PdUJXwK.jpeg)
+
 
 # How to download and install the addon
 Press on the green button "<> Code" top right corner or press directly here [Download](https://github.com/Bagan95/FadeFrameUI/archive/refs/heads/main.zip)
