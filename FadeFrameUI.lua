@@ -4,6 +4,84 @@ local fadeOutTimer = 0
 local fadeOutDelay = 1.1  -- Time in seconds before fading out
 local isFadingOut = false
 
+-- Function to set the alpha of a frame
+local function SetFrameAlpha(frame, alpha)
+    if frame then
+        frame:SetAlpha(alpha)
+    end
+end
+
+-- Function to check if the player is at full health
+local function CheckPlayerHealth()
+    return UnitHealth("player") == UnitHealthMax("player")
+end
+
+-- Function to check if the pet is at full health
+local function CheckPetHealth()
+    return UnitHealth("pet") == UnitHealthMax("pet")
+end
+
+-- Function to handle mouse enter and leave events for the player frame
+local function PlayerFrame_OnEnter()
+    SetFrameAlpha(PlayerFrame, 1)
+end
+
+local function PlayerFrame_OnLeave()
+    if not UnitAffectingCombat("player") and CheckPlayerHealth() then
+        SetFrameAlpha(PlayerFrame, 0.2)
+    end
+end
+
+local function MainMenuBar_OnEnter()
+    SetFrameAlpha(MainMenuBar, 1)
+end
+
+local function MainMenuBar_OnLeave()
+    if not UnitAffectingCombat("player") and CheckPlayerHealth() then
+        SetFrameAlpha(MainMenuBar, 0.2)
+    end
+end
+
+-- Function to handle mouse enter and leave events for the pet frame
+local function PetFrame_OnEnter()
+    SetFrameAlpha(PetFrame, 1)
+end
+
+local function PetFrame_OnLeave()
+    if not UnitAffectingCombat("pet") and CheckPetHealth() then
+        SetFrameAlpha(PetFrame, 0.2)
+    end
+end
+
+-- Function to handle mouse enter and leave events for the Minimap
+local function Minimap_OnEnter()
+    SetFrameAlpha(Minimap, 1)
+    SetFrameAlpha(MinimapZoneTextButton, 1)
+    SetFrameAlpha(MinimapBorderTop, 1)
+    SetFrameAlpha(GameTimeFrame, 1)
+    SetFrameAlpha(MinimapToggleButton, 1)
+end
+
+local function Minimap_OnLeave()
+    if not UnitAffectingCombat("player") and CheckPlayerHealth() then
+        SetFrameAlpha(Minimap, 0.2)
+        SetFrameAlpha(MinimapZoneTextButton, 0.2)
+        SetFrameAlpha(MinimapBorderTop, 0.2)
+        SetFrameAlpha(GameTimeFrame, 0.2)
+        SetFrameAlpha(MinimapToggleButton, 0.2)
+    end
+end
+
+-- Hook the functions to the player, pet frames, and Minimap
+PlayerFrame:SetScript("OnEnter", PlayerFrame_OnEnter)
+PlayerFrame:SetScript("OnLeave", PlayerFrame_OnLeave)
+MainMenuBar:SetScript("OnEnter", MainMenuBar_OnEnter)
+MainMenuBar:SetScript("OnLeave", MainMenuBar_OnLeave)
+PetFrame:SetScript("OnEnter", PetFrame_OnEnter)
+PetFrame:SetScript("OnLeave", PetFrame_OnLeave)
+Minimap:SetScript("OnEnter", Minimap_OnEnter)
+Minimap:SetScript("OnLeave", Minimap_OnLeave)
+
 -- Function to set the alpha of buff frames
 local function FadeBuffs(alpha)
     for i = 0, 15 do  -- Buffs in Vanilla WoW are indexed from 0 to 15
@@ -25,17 +103,19 @@ end
 -- Function to update the visibility and alpha of the UI
 local function UpdateUIVisibility()
     local playerFrame = PlayerFrame
+    local petFrame = PetFrame
     local chatFrame = DEFAULT_CHAT_FRAME
     local actionBars = { MainMenuBar, MultiBarBottomLeft, MultiBarBottomRight, MultiBarRight, MultiBarLeft }
     local inCombat = UnitAffectingCombat("player")
     local fullHealth = UnitHealth("player") == UnitHealthMax("player")
     local fullMana = UnitMana("player") == UnitManaMax("player")
     local hasTarget = UnitExists("target")
+    local petFullHealth = UnitHealth("pet") == UnitHealthMax("pet")
     
     if inCombat or not fullHealth or not fullMana or hasTarget then
         -- Reset UI elements to fully visible if in combat, not full health/mana, or have a target
         playerFrame:SetAlpha(1)
-        chatFrame:SetAlpha(1)
+        petFrame:SetAlpha(1)
         Minimap:SetAlpha(1)
         MinimapZoneTextButton:SetAlpha(1)
         MinimapBorderTop:SetAlpha(1)
@@ -56,6 +136,7 @@ local function UpdateUIVisibility()
             fadeOutTimer = fadeOutTimer + 1  -- Increment the fade-out timer
             if fadeOutTimer >= fadeOutDelay then
                 playerFrame:SetAlpha(0.2)
+                petFrame:SetAlpha(0.2)
                 Minimap:SetAlpha(0.2)
                 MinimapZoneTextButton:SetAlpha(0.2)
                 MinimapBorderTop:SetAlpha(0.2)
