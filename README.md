@@ -1,5 +1,5 @@
 # FadeFrameUI
-Lightweight addon that changes the transparency of the player frame, minimap, action bars and buff icon based on the following conditions:    
+Lightweight addon that changes the transparency of the player frame, pet frame, minimap, action bars and buff icon based on the following conditions:    
 - Out of combat, no target and full health/mana
 
 This addon will hopefully make you more immersed in to the game and also prevent burn in on OLED-monitors. 
