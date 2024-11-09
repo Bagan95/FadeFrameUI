@@ -1,3 +1,11 @@
+-- FullMana function to check if the player has full mana
+local function FullMana(unit)
+    local powerType = UnitPowerType(unit)
+    if not (powerType == 0 or powerType == 3) then return true end  -- 0 = mana, 3 = energy (energy users are ignored)
+    if UnitMana(unit) == UnitManaMax(unit) then return true end  -- Check if mana is at max
+    return false
+end
+
 -- Frame and Variables for the Addon
 local f = CreateFrame("Frame", "FadeUIFrame")
 local fadeOutTimer = 0
@@ -104,16 +112,15 @@ end
 local function UpdateUIVisibility()
     local playerFrame = PlayerFrame
     local petFrame = PetFrame
-    local chatFrame = DEFAULT_CHAT_FRAME
     local actionBars = { MainMenuBar, MultiBarBottomLeft, MultiBarBottomRight, MultiBarRight, MultiBarLeft }
     local inCombat = UnitAffectingCombat("player")
+    local fullmana = FullMana("player")
     local fullHealth = UnitHealth("player") == UnitHealthMax("player")
-    local fullMana = UnitMana("player") == UnitManaMax("player")
     local hasTarget = UnitExists("target")
     local petFullHealth = UnitHealth("pet") == UnitHealthMax("pet")
     
-    if inCombat or not fullHealth or not fullMana or hasTarget then
-        -- Reset UI elements to fully visible if in combat, not full health/mana, or have a target
+    if inCombat or not fullHealth or hasTarget or not fullmana then
+        -- Reset UI elements to fully visible if in combat, not full health, or have a target or not full mana
         playerFrame:SetAlpha(1)
         petFrame:SetAlpha(1)
         Minimap:SetAlpha(1)
@@ -131,7 +138,7 @@ local function UpdateUIVisibility()
         fadeOutTimer = 0
         isFadingOut = false
     else
-        -- Fade out the UI elements if not in combat and at full health/mana without a target
+        -- Fade out the UI elements if not in combat and at full health, without a target
         if not isFadingOut then
             fadeOutTimer = fadeOutTimer + 1  -- Increment the fade-out timer
             if fadeOutTimer >= fadeOutDelay then
