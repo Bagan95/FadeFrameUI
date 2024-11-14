@@ -33,12 +33,12 @@ of your mouse instead of the arrow buttons up and down, on the chat frame it sel
 
 Unlock the chat frame and drag it slightly out of the screen to not have the arrow buttons visable anymore.
 
-## Not supported addon
+## Not Supported Addon
 [pfUI](https://shagu.org/pfUI/) 
 
 [ShaguPlates](https://shagu.org/ShaguPlates/) 
 
-## Other
+## Other Information
 Works on World of Warcraft version 1.12.1 and Turtle WoW 1.17.2
 
 This addon "FadeFrameUI" is for people that stil want the default UI.
