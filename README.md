@@ -38,7 +38,7 @@ Unlock the chat frame and drag it slightly out of the screen to not have the arr
 
 [ShaguPlates](https://shagu.org/ShaguPlates/) 
 
-## What version of WoW
+## Other
 Works on World of Warcraft version 1.12.1 and Turtle WoW 1.17.2
 
 This addon "FadeFrameUI" is for people that stil want the default UI.
