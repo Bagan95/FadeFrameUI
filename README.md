@@ -34,7 +34,7 @@ of your mouse instead of the arrow buttons up and down, on the chat frame it sel
 Unlock the chat frame and drag it slightly out of the screen to not have the arrow buttons visable anymore.
 
 ## Not supported addon
-[pfUI](https://shagu.org/pfUI/) and [ShaguPlates]https://shagu.org/ShaguPlates/) is not supported but some functions will work.
+[pfUI](https://shagu.org/pfUI/) and [ShaguPlates](https://shagu.org/ShaguPlates/) is not supported but some functions will work.
 It is not nessesary to have both installed cause pfUI already have some of this fuctions built in.
 This addon "FadeFrameUI" is for people that stil want the default UI.
 
