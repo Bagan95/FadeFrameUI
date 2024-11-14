@@ -35,6 +35,7 @@ Unlock the chat frame and drag it slightly out of the screen to not have the arr
 
 ## Not supported addon
 [pfUI](https://shagu.org/pfUI/) 
+
 [ShaguPlates](https://shagu.org/ShaguPlates/) 
 
 ## What version of WoW
