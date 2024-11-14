@@ -14,7 +14,7 @@ This addon will hopefully make you more immersed in to the game and also prevent
 ![100%](https://i.imgur.com/PdUJXwK.jpeg)
 
 
-# How to download and install the addon
+# How To Download And Install The Addon
 Press on the green button "<> Code" top right corner or press directly here [Download](https://github.com/Bagan95/FadeFrameUI/archive/refs/heads/main.zip)
 
 Under "Local" press on "Download ZIP"
