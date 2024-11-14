@@ -25,7 +25,7 @@ Make sure the addon folder you just downloaded is named FadeFrameUI and not Fade
 
 Should look like this: "\Interface\AddOns\FadeFrameUI"
 
-## Supported Addons and recommended Addons
+## Supported Addons
 This addon support and recommend [ShaguTweaks](https://shagu.org/ShaguTweaks/)
 
 ShaguTweaks Addon has an option called "Chat Tweaks" that you can activate ingame. By activating the function you are able to use the scroll wheel
