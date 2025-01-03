@@ -11,7 +11,7 @@ This addon will hopefully make you more immersed in to the game and also prevent
 
 # This is 100% (default) transparency.
 
-![100%](https://i.imgur.com/PdUJXwK.jpeg)
+![100%](https://i.imgur.com/PdUJXwK.jpeg)  
 
 
 # How To Download And Install The Addon
