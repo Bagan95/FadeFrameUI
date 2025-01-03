@@ -1,4 +1,4 @@
-# FadeFrameUI 1.12.1 and Turtle WoW 1.17.2
+# FadeFrameUI - 1.12.1 and Turtle WoW 1.17.2
 Lightweight addon that changes the transparency of the player frame, pet frame, minimap, action bars and buff icons based on the following conditions:    
 - Out of combat, no target and full health/mana
 
